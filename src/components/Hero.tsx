@@ -77,7 +77,7 @@ export default function Hero() {
                     <p>
                       <span className="text-neon/70">STACK:</span>{" "}
                       <span className="text-gray-400">
-                        React · Next.js · Node.js · Python · Selenium
+                        React · Next.js · Node.js · Python · WordPress · Selenium
                       </span>
                     </p>
                   </div>
