@@ -1,8 +1,16 @@
-import { useRef, useMemo } from "react";
+import { useRef, useMemo, Suspense, Component, type ReactNode } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Float, Text3D, Center, OrbitControls } from "@react-three/drei";
+import { Float, Text3D, Center, OrbitControls, Text } from "@react-three/drei";
 import type { Mesh, Group } from "three";
 import * as THREE from "three";
+
+const BASE = import.meta.env.BASE_URL;
+
+class ErrorBoundary extends Component<{ children: ReactNode; fallback: ReactNode }, { hasError: boolean }> {
+  state = { hasError: false };
+  static getDerivedStateFromError() { return { hasError: true }; }
+  render() { return this.state.hasError ? this.props.fallback : this.props.children; }
+}
 
 function Robot() {
   const groupRef = useRef<Group>(null);
@@ -132,7 +140,7 @@ function Robot() {
   );
 }
 
-function NameTag() {
+function NameTag3D() {
   const meshRef = useRef<Mesh>(null);
 
   useFrame((state) => {
@@ -145,7 +153,7 @@ function NameTag() {
     <mesh ref={meshRef} position={[0, -2.3, 0]}>
       <Center>
         <Text3D
-          font="/fonts/helvetiker_regular.typeface.json"
+          font={`${BASE}fonts/helvetiker_regular.typeface.json`}
           size={0.35}
           height={0.08}
           bevelEnabled
@@ -163,6 +171,45 @@ function NameTag() {
         </Text3D>
       </Center>
     </mesh>
+  );
+}
+
+function NameTagFallback() {
+  const meshRef = useRef<Mesh>(null);
+  useFrame((state) => {
+    if (meshRef.current) {
+      meshRef.current.position.y = -2.3 + Math.sin(state.clock.elapsedTime) * 0.05;
+    }
+  });
+  return (
+    <mesh ref={meshRef} position={[0, -2.3, 0]}>
+      <Center>
+        <Text
+          fontSize={0.5}
+          color="#00ff41"
+          anchorX="center"
+          anchorY="middle"
+          font={undefined}
+        >
+          BILAL MADNI
+          <meshStandardMaterial
+            color="#00ff41"
+            emissive="#00ff41"
+            emissiveIntensity={0.8}
+          />
+        </Text>
+      </Center>
+    </mesh>
+  );
+}
+
+function NameTag() {
+  return (
+    <ErrorBoundary fallback={<NameTagFallback />}>
+      <Suspense fallback={<NameTagFallback />}>
+        <NameTag3D />
+      </Suspense>
+    </ErrorBoundary>
   );
 }
 
@@ -198,14 +245,18 @@ function Scene() {
 
 export default function RobotModel() {
   return (
-    <div className="w-full h-[400px] sm:h-[500px] lg:h-[600px]">
-      <Canvas
-        camera={{ position: [0, 0, 6], fov: 45 }}
-        gl={{ antialias: true, alpha: true }}
-        style={{ background: "transparent" }}
-      >
-        <Scene />
-      </Canvas>
-    </div>
+    <ErrorBoundary fallback={<div className="w-full h-[400px] sm:h-[500px] lg:h-[600px]" />}>
+      <div className="w-full h-[400px] sm:h-[500px] lg:h-[600px]">
+        <Canvas
+          camera={{ position: [0, 0, 6], fov: 45 }}
+          gl={{ antialias: true, alpha: true }}
+          style={{ background: "transparent" }}
+        >
+          <Suspense fallback={null}>
+            <Scene />
+          </Suspense>
+        </Canvas>
+      </div>
+    </ErrorBoundary>
   );
 }
