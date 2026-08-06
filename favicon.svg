@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="BM developer logo">
-  <rect width="64" height="64" rx="14" fill="#050508"/>
-  <rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="#00ff41" stroke-width="2"/>
-  <path d="M17 20 9 32l8 12M47 20l8 12-8 12" fill="none" stroke="#00d4ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="32" y="38" text-anchor="middle" fill="#00ff41" font-family="monospace" font-size="17" font-weight="700">BM</text>
+  <rect width="64" height="64" rx="14" fill="#f5f8ff"/>
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="#1265e5" stroke-width="2"/>
+  <path d="M17 20 9 32l8 12M47 20l8 12-8 12" fill="none" stroke="#2f80ed" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="32" y="38" text-anchor="middle" fill="#0b4eb8" font-family="monospace" font-size="17" font-weight="700">BM</text>
 </svg>
