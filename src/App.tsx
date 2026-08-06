@@ -13,10 +13,11 @@ import ScanlineOverlay from "./components/ScanlineOverlay";
 export default function App() {
   return (
     <div className="relative min-h-screen bg-terminal grid-bg">
+      <a href="#main-content" className="skip-link">Skip to main content</a>
       <MatrixRain />
       <ScanlineOverlay />
       <Navbar />
-      <main>
+      <main id="main-content">
         <Hero />
         <About />
         <Skills />

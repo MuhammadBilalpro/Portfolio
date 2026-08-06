@@ -43,11 +43,11 @@ export default function Hero() {
                   <div className="text-cyber-blue text-sm sm:text-base font-mono h-6">
                     <TypeAnimation
                       sequence={[
-                        "> Web Developer",
+                        "> Full-Stack Developer",
                         2000,
                         "> WordPress Developer",
                         2000,
-                        "> Python Developer",
+                        "> React & Next.js Developer",
                         2000,
                         "> Automation Builder",
                         2000,
@@ -59,6 +59,11 @@ export default function Hero() {
                     />
                   </div>
                 </div>
+
+                <p className="text-sm sm:text-base text-gray-300 leading-relaxed max-w-xl">
+                  I build fast, responsive websites, WordPress solutions, e-commerce
+                  stores, and web applications for businesses in Pakistan and worldwide.
+                </p>
 
                 <div className="pt-2 space-y-1">
                   <div className="flex items-center gap-2">
@@ -100,12 +105,13 @@ export default function Hero() {
                 href="mailto:sheikhbilal8930@gmail.com"
                 className="px-5 py-2.5 bg-neon/10 border border-neon/40 text-neon text-sm font-mono rounded hover:bg-neon/20 hover:border-neon transition-all duration-300 animate-pulse-glow"
               >
-                ./contact.sh
+                Hire Me <span aria-hidden="true">./contact.sh</span>
               </a>
               <div className="flex items-center gap-3">
                 <a
                   href="mailto:sheikhbilal8930@gmail.com"
                   className="text-gray-500 hover:text-neon transition-colors"
+                  aria-label="Email Bilal Madni"
                 >
                   <FiMail size={18} />
                 </a>
@@ -114,6 +120,7 @@ export default function Hero() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-500 hover:text-neon transition-colors"
+                  aria-label="Bilal Madni on GitHub"
                 >
                   <FiGithub size={18} />
                 </a>
@@ -122,6 +129,7 @@ export default function Hero() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-500 hover:text-neon transition-colors"
+                  aria-label="Bilal Madni on LinkedIn"
                 >
                   <FiLinkedin size={18} />
                 </a>
@@ -148,6 +156,7 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 text-neon/50 hover:text-neon transition-colors"
+        aria-label="Scroll to About section"
       >
         <motion.div
           animate={{ y: [0, 8, 0] }}

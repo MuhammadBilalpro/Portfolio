@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Bilal Madni developer portfolio</title>
+  <desc id="desc">Full-Stack and WordPress Developer in Karachi</desc>
+  <defs>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0v50" fill="none" stroke="#00ff41" stroke-opacity=".08"/></pattern>
+    <radialGradient id="glow"><stop stop-color="#00ff41" stop-opacity=".18"/><stop offset="1" stop-color="#050508" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#050508"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <circle cx="260" cy="315" r="300" fill="url(#glow)"/>
+  <rect x="66" y="66" width="1068" height="498" rx="28" fill="#0a0a0f" stroke="#00ff41" stroke-opacity=".45" stroke-width="2"/>
+  <circle cx="105" cy="105" r="9" fill="#ef4444"/><circle cx="135" cy="105" r="9" fill="#eab308"/><circle cx="165" cy="105" r="9" fill="#22c55e"/>
+  <path d="M190 220 120 315l70 95M370 220l70 95-70 95" fill="none" stroke="#00d4ff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="280" y="350" text-anchor="middle" fill="#00ff41" font-family="monospace" font-size="92" font-weight="700">BM</text>
+  <text x="510" y="270" fill="#00ff41" font-family="monospace" font-size="58" font-weight="700">BILAL MADNI</text>
+  <text x="510" y="330" fill="#00d4ff" font-family="monospace" font-size="28">FULL-STACK &amp; WORDPRESS DEVELOPER</text>
+  <text x="510" y="385" fill="#c0c0c0" font-family="monospace" font-size="22">Websites • E-commerce • React • Automation</text>
+  <text x="510" y="450" fill="#6b7280" font-family="monospace" font-size="20">Karachi, Pakistan • Available worldwide</text>
+</svg>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FiTerminal, FiMenu, FiX } from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi";
 
 const navLinks = [
   { label: "~/home", href: "#home" },
@@ -36,10 +36,11 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <a href="#home" className="flex items-center gap-2 group">
-            <FiTerminal className="text-neon text-xl group-hover:animate-glitch" />
+            <span className="brand-mark" aria-hidden="true">&lt;BM/&gt;</span>
             <span className="font-display text-neon font-bold text-sm sm:text-base tracking-wider">
-              BILAL<span className="text-cyber-blue">.SYS</span>
+              BILAL<span className="text-cyber-blue">.DEV</span>
             </span>
+            <span className="sr-only">Bilal Madni — Home</span>
           </a>
 
           <div className="hidden md:flex items-center gap-1">
@@ -55,8 +56,12 @@ export default function Navbar() {
           </div>
 
           <button
+            type="button"
             onClick={() => setMobileOpen(!mobileOpen)}
             className="md:hidden text-neon p-2"
+            aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={mobileOpen}
+            aria-controls="mobile-navigation"
           >
             {mobileOpen ? <FiX size={22} /> : <FiMenu size={22} />}
           </button>
@@ -66,6 +71,7 @@ export default function Navbar() {
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
+            id="mobile-navigation"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
