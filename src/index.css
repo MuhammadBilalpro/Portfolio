@@ -30,6 +30,42 @@ body {
   overflow-x: hidden;
 }
 
+*:focus-visible {
+  outline: 2px solid var(--color-neon);
+  outline-offset: 4px;
+}
+
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: -5rem;
+  z-index: 10000;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-neon);
+  border-radius: 0.5rem;
+  background: var(--color-terminal-dark);
+  color: var(--color-neon);
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.5rem;
+  padding: 0.3rem 0.45rem;
+  border: 1px solid rgba(0, 255, 65, 0.45);
+  border-radius: 0.4rem;
+  color: var(--color-neon);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  box-shadow: 0 0 12px rgba(0, 255, 65, 0.12);
+}
+
 ::selection {
   background: var(--color-neon);
   color: var(--color-terminal);
@@ -142,4 +178,14 @@ body {
     linear-gradient(rgba(0, 255, 65, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 255, 65, 0.03) 1px, transparent 1px);
   background-size: 50px 50px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

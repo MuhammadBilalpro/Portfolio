@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" role="img" aria-labelledby="title desc">
+  <title id="title">Bilal Madni developer logo</title>
+  <desc id="desc">BM monogram framed by code brackets with Bilal Madni wordmark</desc>
+  <rect width="480" height="120" rx="20" fill="#050508"/>
+  <rect x="3" y="3" width="474" height="114" rx="17" fill="none" stroke="#00ff41" stroke-opacity=".45" stroke-width="2"/>
+  <path d="M46 31 22 60l24 29M130 31l24 29-24 29" fill="none" stroke="#00d4ff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="88" y="75" text-anchor="middle" fill="#00ff41" font-family="monospace" font-size="42" font-weight="700">BM</text>
+  <text x="184" y="55" fill="#00ff41" font-family="monospace" font-size="25" font-weight="700">BILAL MADNI</text>
+  <text x="184" y="82" fill="#9ca3af" font-family="monospace" font-size="15">FULL-STACK • WORDPRESS • AUTOMATION</text>
+</svg>
