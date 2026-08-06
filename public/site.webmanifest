@@ -3,8 +3,8 @@
   "short_name": "Bilal.dev",
   "start_url": "/Portfolio/",
   "display": "standalone",
-  "background_color": "#050508",
-  "theme_color": "#050508",
+  "background_color": "#f5f8ff",
+  "theme_color": "#f5f8ff",
   "icons": [
     { "src": "/Portfolio/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
   ]
