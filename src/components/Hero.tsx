@@ -81,7 +81,7 @@ export default function Hero() {
                   <p className="text-xs text-cyber-blue uppercase tracking-[0.18em] mb-2">What I build</p>
                   <h2 className="font-display text-2xl sm:text-3xl text-white font-bold">Modern web solutions</h2>
                 </div>
-                <div className="clay-monogram" aria-hidden="true">BM</div>
+                <div className="clay-monogram" aria-hidden="true">BD</div>
               </div>
 
               <div className="space-y-3">

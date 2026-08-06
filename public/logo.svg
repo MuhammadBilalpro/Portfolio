@@ -1,10 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" role="img" aria-labelledby="title desc">
-  <title id="title">Bilal Madni developer logo</title>
-  <desc id="desc">BM monogram framed by code brackets with Bilal Madni wordmark</desc>
-  <rect width="480" height="120" rx="20" fill="#f5f8ff"/>
-  <rect x="3" y="3" width="474" height="114" rx="17" fill="none" stroke="#1265e5" stroke-opacity=".35" stroke-width="2"/>
-  <path d="M46 31 22 60l24 29M130 31l24 29-24 29" fill="none" stroke="#2f80ed" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="88" y="75" text-anchor="middle" fill="#1265e5" font-family="monospace" font-size="42" font-weight="700">BM</text>
-  <text x="184" y="55" fill="#102a54" font-family="monospace" font-size="25" font-weight="700">BILAL MADNI</text>
-  <text x="184" y="82" fill="#536987" font-family="monospace" font-size="15">FULL-STACK • WORDPRESS • AUTOMATION</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 140" role="img" aria-labelledby="title desc">
+  <title id="title">BilluDevs</title>
+  <desc id="desc">BilluDevs liquid glass developer brand by Bilal Madni</desc>
+  <defs>
+    <linearGradient id="bg" x1="20" y1="10" x2="525" y2="135" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff" stop-opacity=".92"/><stop offset=".55" stop-color="#ddecff" stop-opacity=".78"/><stop offset="1" stop-color="#a9ceff" stop-opacity=".7"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="38" y1="25" x2="125" y2="118" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#66bbff"/><stop offset=".52" stop-color="#1265e5"/><stop offset="1" stop-color="#063d9c"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="150%" height="170%"><feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#17529c" flood-opacity=".2"/></filter>
+  </defs>
+  <rect x="5" y="5" width="550" height="130" rx="34" fill="url(#bg)" stroke="white" stroke-width="3" filter="url(#shadow)"/>
+  <rect x="24" y="22" width="96" height="96" rx="28" fill="url(#blue)"/>
+  <path d="M51 47 35 70l16 23M93 47l16 23-16 23" fill="none" stroke="white" stroke-opacity=".8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="72" y="79" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="800">BD</text>
+  <path d="M39 34c22-10 48-9 68 2" fill="none" stroke="white" stroke-opacity=".35" stroke-width="5" stroke-linecap="round"/>
+  <text x="145" y="69" fill="#102a54" font-family="Arial, sans-serif" font-size="37" font-weight="800" letter-spacing="-.5">Billu</text>
+  <text x="235" y="69" fill="#1265e5" font-family="Arial, sans-serif" font-size="37" font-weight="800" letter-spacing="-.5">Devs</text>
+  <text x="147" y="96" fill="#536987" font-family="Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="2">DESIGN • DEVELOPMENT • AUTOMATION</text>
 </svg>
