@@ -1,6 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="BM developer logo">
-  <rect width="64" height="64" rx="14" fill="#f5f8ff"/>
-  <rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="#1265e5" stroke-width="2"/>
-  <path d="M17 20 9 32l8 12M47 20l8 12-8 12" fill="none" stroke="#2f80ed" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="32" y="38" text-anchor="middle" fill="#0b4eb8" font-family="monospace" font-size="17" font-weight="700">BM</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="BilluDevs logo">
+  <defs>
+    <linearGradient id="g" x1="8" y1="5" x2="56" y2="59" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60b7ff"/><stop offset=".5" stop-color="#1265e5"/><stop offset="1" stop-color="#063d9c"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="17" fill="url(#g)"/>
+  <path d="M18 19 9 32l9 13M46 19l9 13-9 13" fill="none" stroke="white" stroke-opacity=".8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="32" y="38" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="800">BD</text>
+  <path d="M14 8c11-5 27-5 38 1" fill="none" stroke="white" stroke-opacity=".34" stroke-width="3" stroke-linecap="round"/>
 </svg>

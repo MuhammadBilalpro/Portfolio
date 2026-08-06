@@ -35,11 +35,11 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <a href="#home" className="flex items-center gap-2 group">
-            <span className="brand-mark" aria-hidden="true">BM</span>
+            <span className="brand-mark" aria-hidden="true">BD</span>
             <span className="font-display text-neon font-bold text-sm sm:text-base tracking-wider">
-              BILAL<span className="text-cyber-blue"> MADNI</span>
+              BILLU<span className="text-cyber-blue">DEVS</span>
             </span>
-            <span className="sr-only">Bilal Madni — Home</span>
+            <span className="sr-only">BilluDevs by Bilal Madni — Home</span>
           </a>
 
           <div className="hidden md:flex items-center gap-1">
