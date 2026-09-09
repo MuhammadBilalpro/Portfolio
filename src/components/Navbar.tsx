@@ -9,6 +9,7 @@ const navLinks = [
   { label: "Work", href: "#projects" },
   { label: "Experience", href: "#experience" },
   { label: "Contact", href: "#contact" },
+  { label: "Résumé", href: `${import.meta.env.BASE_URL}Bilal-Madni-Resume.pdf` },
 ];
 
 export default function Navbar() {

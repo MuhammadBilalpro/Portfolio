@@ -3,6 +3,8 @@ import {
   FiArrowUpRight,
   FiCheckCircle,
   FiCode,
+  FiCpu,
+  FiDownload,
   FiGithub,
   FiLayers,
   FiLinkedin,
@@ -11,15 +13,16 @@ import {
 } from "react-icons/fi";
 
 const services = [
-  { icon: FiLayers, label: "Business websites", detail: "WordPress & custom builds" },
-  { icon: FiCode, label: "Web applications", detail: "React, Next.js & Node.js" },
-  { icon: FiShoppingBag, label: "E-commerce", detail: "WooCommerce experiences" },
+  { icon: FiCode, label: "Web applications & SaaS", detail: "Next.js, Node.js, REST APIs, AWS" },
+  { icon: FiCpu, label: "AI agents & assistants", detail: "LangGraph, Claude & OpenAI APIs" },
+  { icon: FiLayers, label: "Portals & admin panels", detail: "SSO, RBAC, Arabic RTL" },
+  { icon: FiShoppingBag, label: "Business sites & e-commerce", detail: "WordPress & WooCommerce" },
 ];
 
 const metrics = [
-  { value: "9+", label: "Live projects" },
-  { value: "15+", label: "Technologies" },
-  { value: "1+ yr", label: "Experience" },
+  { value: "14+", label: "Shipped projects" },
+  { value: "2", label: "Saudi products live" },
+  { value: "AWS", label: "Server ops" },
 ];
 
 export default function Hero() {
@@ -41,24 +44,25 @@ export default function Hero() {
             </div>
 
             <p className="text-cyber-blue text-sm sm:text-base font-semibold tracking-[0.2em] uppercase mb-4">
-              Full-Stack & WordPress Developer
+              Full Stack Developer · Next.js · Node.js · AWS
             </p>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.05] tracking-tight">
               Digital experiences
               <span className="block hero-gradient-text">built to perform.</span>
             </h1>
             <p className="mt-7 max-w-2xl text-base sm:text-lg text-gray-300 leading-relaxed">
-              I’m Bilal Madni. I design and develop polished websites, e-commerce
-              stores, and web applications that help ambitious businesses look credible,
-              move faster, and convert more customers.
+              I’m Bilal Madni. I build web applications, SaaS products, internal
+              portals and AI assistants — from the React front end to the Node.js API
+              to the AWS server it runs on. Currently shipping products for clients in
+              Saudi Arabia and Pakistan.
             </p>
 
             <div className="mt-9 flex flex-col sm:flex-row gap-4">
               <a href="#projects" className="hero-primary-button">
                 Explore my work <FiArrowUpRight size={18} />
               </a>
-              <a href="mailto:sheikhbilal8930@gmail.com" className="hero-secondary-button">
-                Start a project
+              <a href={`${import.meta.env.BASE_URL}Bilal-Madni-Resume.pdf`} download="Bilal-Madni-Resume.pdf" className="hero-secondary-button">
+                <FiDownload size={18} /> Download résumé
               </a>
             </div>
 
@@ -112,7 +116,7 @@ export default function Hero() {
                 ))}
               </div>
             </div>
-            <div className="clay-floating-pill">Responsive • Fast • SEO-ready</div>
+            <div className="clay-floating-pill">Full-stack • AI-ready • Deployed on AWS</div>
           </motion.div>
         </div>
       </div>
